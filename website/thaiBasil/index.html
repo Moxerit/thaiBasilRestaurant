@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/app.css">
   
-  <title>thaibasilrestaurant</title>
+  <title>Thai Basil</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-md navbar-dark">
@@ -19,7 +19,41 @@
     <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#menu" class="nav-link">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a href="#catering" class="nav-link" data-toggle="modal" data-target="#bookingModal">Catering</a>
+        </li>
+        <li class="nav-item">
+          <a href="#classes" class="nav-link">Classes</a>
+        </li>
+      </ul>
+    </div>
   </nav>
+
+  <section id="home" class="d-flex justify-content-center align-items-center">
+    <div id="overlay"></div>
+    <div id="header" class="container text-white text-center">
+      <h3 class="display-5 mb-0">Sacramento</h3>
+      <h1 class="display-1">THAI BASIL</h1>
+      <p class="lead d-none d-md-block pb-5">FRESH • AUTHENTIC • THAI</p>
+
+      <h3 class="display-6 mt-5">OPEN 7 DAYS</h3>
+      <h3 class="display-7 mt-0">11:30AM - 9:00PM</h3>
+      <button id="book" class="btn btn-lg btn-primary px-5" data-toggle="modal" data-target="#bookingModal">CATER</button>
+      <button id="book" class="btn btn-lg btn-primary px-5" data-toggle="modal" data-target="#bookingModal">GRUBHUB</button>
+      <button id="book" class="btn btn-lg btn-primary px-5" data-toggle="modal" data-target="#bookingModal">POSTMATES</button>
+    </div>
+  </section>
   
 
 
