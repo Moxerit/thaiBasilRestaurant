@@ -8,11 +8,14 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/app.css">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link href="//db.onlinewebfonts.com/c/a2124c75d4c5013e981054d562874ff7?family=Postmates+Std+Medium" rel="stylesheet" type="text/css"/>
   <title>Thai Basil</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark">
+  <nav class="navbar navbar-expand-md navbar-dark px-3">
     <a href="#" class="navbar-brand">
       <h3 class="mb-0">Thai Basil</h3>
     </a>
@@ -43,15 +46,17 @@
   <section id="home" class="d-flex justify-content-center align-items-center">
     <div id="overlay"></div>
     <div id="header" class="container text-white text-center">
-      <h3 class="display-5 mb-0">Sacramento</h3>
       <h1 class="display-1">THAI BASIL</h1>
       <p class="lead d-none d-md-block pb-5">FRESH • AUTHENTIC • THAI</p>
 
-      <h3 class="display-6 mt-5">OPEN 7 DAYS</h3>
-      <h3 class="display-7 mt-0">11:30AM - 9:00PM</h3>
-      <button id="book" class="btn btn-lg btn-primary px-5" data-toggle="modal" data-target="#bookingModal">CATER</button>
-      <button id="book" class="btn btn-lg btn-primary px-5" data-toggle="modal" data-target="#bookingModal">GRUBHUB</button>
-      <button id="book" class="btn btn-lg btn-primary px-5" data-toggle="modal" data-target="#bookingModal">POSTMATES</button>
+      <h3 class="display-5 mt-5">OPEN 7 DAYS</h3>
+      <h3 class="display-8 mt-0 mb-3">11:30AM - 9:00PM</h3>
+      <div id="btns" class="btn-group text-center justify-content-center flex-column flex-sm-row mt-5">
+        <button id="grub" class="m-2 btn btn-lg btn-tertiary text-white " data-target="#bookingModal">GRUBHUB</button>
+        <button id="cater" class="m-2 btn btn-lg btn-success text-white" data-toggle="modal" data-target="#bookingModal">CATERING</button>
+        <button id="post" class="m-2 btn btn-lg btn-warning text-white" data-target="#bookingModal">POSTMATES</button>
+      </div>
+      
     </div>
   </section>
   
