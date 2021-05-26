@@ -8143,26 +8143,26 @@ body {
     transition: border 0.2s;
     border-bottom: 1px solid white; }
 
-#home {
+#showcase {
   background: url("/images/foodbg.jpg") bottom center/cover no-repeat;
   min-height: 850px;
   position: relative; }
-  #home #header {
+  #showcase #header {
     z-index: 2; }
-    #home #header #btns {
+    #showcase #header #btns {
       font-size: 1.5rem;
       color: white;
       margin: 1rem 0.5rem; }
-      #home #header #btns #grub {
+      #showcase #header #btns #grub {
         font-family: 'Barlow Semi Condensed', sans-serif;
         border-radius: 0.3rem; }
-      #home #header #btns #cater {
+      #showcase #header #btns #cater {
         border-radius: 0.3rem;
         font-weight: 500; }
-      #home #header #btns #post {
+      #showcase #header #btns #post {
         font-family: "Postmates Std Medium";
         border-radius: 0.3rem; }
-  #home #overlay {
+  #showcase #overlay {
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
@@ -8170,11 +8170,11 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1; }
-  #home h1, #home .h1 {
+  #showcase h1, #showcase .h1 {
     font-family: "Oxygen", sans-serif;
     line-height: 1;
     letter-spacing: 10px; }
-  #home #book {
+  #showcase #book {
     font-size: 1.5rem;
     border-radius: 2rem; }
 
