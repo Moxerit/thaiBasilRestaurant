@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-
+  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/app.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,32 +16,34 @@
 
 <body>
   <nav class="navbar navbar-expand-md navbar-dark px-3">
-    <a href="#" class="navbar-brand">
-      <h3 class="mb-0">Thai Basil</h3>
-    </a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mainNavbar">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a href="#showcase" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#about" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#menu" class="nav-link">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a id="book" href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#bookingModal">Catering</a>
-        </li>
-        <li class="nav-item">
-          <a href="#classes" class="nav-link">Classes</a>
-        </li>
-      </ul>
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">
+        <h3 class="mb-0">Thai Basil</h3>
+      </a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#showcase" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a id="book" href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#bookingModal">Catering</a>
+          </li>
+          <li class="nav-item">
+            <a href="#classes" class="nav-link">Classes</a>
+          </li>
+        </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <section id="showcase" class="d-flex justify-content-center align-items-center">
     <div id="overlay"></div>
@@ -155,16 +157,16 @@
   <div class="container mt-5">
        <div class="row">
            <div class="col-lg-7 mb-3">
-               <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+               <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
-                      <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#MainCarousel" data-slide-to="1"></li>
-                      <li data-target="#MainCarousel" data-slide-to="2"></li>
-                      <li data-target="#MainCarousel" data-slide-to="2"></li>
+                      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </ol>
                    <div class="carousel-inner">
                        <div class="carousel-item active">
-                           <img src="images/slider/slide1.jpg" alt="First Slide" class="d-block w-100">
+                           <img src="images/slider/slide2.jpg" alt="First Slide" class="d-block w-100">
                            <div class="carousel-caption d-none d-md-block">
                             <h5>Test One</h5>
                             <p>One of the best</p>
@@ -173,39 +175,39 @@
                        <div class="carousel-item">
                            <img src="images/slider/slide2.jpg" alt="Second Slide" class="d-block w-100">
                            <div class="carousel-caption d-none d-md-block">
-                            <h5>Test One</h5>
+                            <h5>Test Two</h5>
                             <p>One of the best</p>
                           </div>
                        </div>
                        <div class="carousel-item">
-                           <img src="images/slider/slide3.jpg" alt="Third Slide" class="d-block w-100">
+                           <img src="images/slider/slide2.jpg" alt="Third Slide" class="d-block w-100">
                            <div class="carousel-caption d-none d-md-block">
-                            <h5>Test One</h5>
+                            <h5>Test Three</h5>
                             <p>One of the best</p>
                           </div>
                        </div>
                        <div class="carousel-item">
-                           <img src="images/slider/slide1.jpg" alt="Fourth Slide" class="d-block w-100">
+                           <img src="images/slider/slide2.jpg" alt="Fourth Slide" class="d-block w-100">
                            <div class="carousel-caption d-none d-md-block">
-                            <h5>Test One</h5>
+                            <h5>Test Four</h5>
                             <p>One of the best</p>
                           </div>
                         </div>
                    </div>
-                    <a href="#mainCarousel" class="carousel-control-prev" data-slide="prev" role="button">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                    </a>
-                    <a href="#mainCarousel" class="carousel-control-next" data-slide="next" role="button">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev" >
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next" >
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                </div>
            </div>
            <div class="col-lg-5">
                <h3>A TASTE OF HOME</h3>
-               <p class="lead">Meticiously made fresh with every meal.</p>
-               <a class="text-success" href="">See for yourself<i class="fa fa-arrow-right"></i></a>
+               <p class="lead">Meticiously made fresh with every meal. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, qui perferendis error libero iste id unde iusto sed cumque deserunt! Impedit corrupti labore tenetur harum temporibus repellat dolores facilis non.</p>
+               <a class="text-success" href="#display">See for yourself<i class="fa fa-arrow-right"></i></a>
            </div>
        </div>
   </div>
@@ -242,41 +244,59 @@
 
 
 <section id="display">
-  <h5 class="display-5 text-center text-secondary">#thaibasil</h5>
+  <h5 class="display-5 my-4 text-center text-secondary">#thaibasil</h5>
   <div class="row">
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
       <div class="hovereffect">
-          <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+          <img class="img-responsive" src="images/Hnet.com-image.jpg"  alt="">
           <div class="overlay">
-             <h2>Hover effect 1v2</h2>
-             <a class="info" href="#">link here</a>
+             <h2>FOOD NAME</h2>
+             <a class="info" href="#">ORDER NOW</a>
           </div>
       </div>
   </div>
   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+        <img class="img-responsive" src="images/Hnet.com-image.jpg" alt="">
         <div class="overlay">
-           <h2>Hover effect 1v2</h2>
-           <a class="info" href="#">link here</a>
+           <h2>FOOD NAME</h2>
+           <a class="info" href="#">ORDER NOW</a>
         </div>
     </div>
 </div>
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
   <div class="hovereffect">
-      <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+      <img class="img-responsive" src="images/Hnet.com-image.jpg" alt="">
       <div class="overlay">
-         <h2>Hover effect 1v2</h2>
-         <a class="info" href="#">link here</a>
+         <h2>FOOD NAME</h2>
+         <a class="info" href="#">ORDER NOW</a>
       </div>
   </div>
 </div>
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
   <div class="hovereffect">
-      <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+      <img class="img-responsive" src="images/Hnet.com-image.jpg" alt="">
       <div class="overlay">
-         <h2>Hover effect 1v2</h2>
-         <a class="info" href="#">link here</a>
+         <h2>FOOD NAME</h2>
+         <a class="info" href="#">ORDER NOW</a>
+      </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+  <div class="hovereffect">
+      <img class="img-responsive" src="images/Hnet.com-image.jpg" alt="">
+      <div class="overlay">
+         <h2>FOOD NAME</h2>
+         <a class="info" href="#">ORDER NOW</a>
+      </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+  <div class="hovereffect">
+      <img class="img-responsive" src="images/Hnet.com-image.jpg" alt="">
+      <div class="overlay">
+         <h2>FOOD NAME</h2>
+         <a class="info" href="#">ORDER NOW</a>
       </div>
   </div>
 </div>
@@ -338,6 +358,7 @@
 
 
 <!-- JavaScript Bundle with Popper -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
