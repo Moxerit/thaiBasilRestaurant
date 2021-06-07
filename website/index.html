@@ -35,12 +35,12 @@
             <a href="#menu" class="nav-link">Menu</a>
           </li>
           <li class="nav-item">
-            <a id="book" href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#bookingModal">Catering</a>
+            <a id="book" href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#cateringModal">Catering</a>
           </li>
           <li class="nav-item">
-            <a href="#classes" class="nav-link">Classes</a>
+            <a href="#classes" class="nav-link" data-bs-toggle="modal" data-bs-target="#bookingModal">Classes</a>
           </li>
-        </ul>
+        </ul>d
     </div>
   </div>
 </nav>
@@ -317,15 +317,32 @@
   
 </section>
 
+<!-- FOOTER -->
 
-<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="ModalPopup" aria-hidden="true">
+<section id="footer" class="p-3 bg-secondary">
+  <ul class="nav text-center justify-content-center flex-column flex-sm-row">
+      <li class="nav-item">
+          <a href="#showcase" class="nav-link text-white">HOME</a>
+      </li>
+      <li class="nav-item">
+          <a href="#" class="nav-link text-white">MENU</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#cateringModal">CATERING</a>
+      </li>
+      <li class="nav-item">
+          <a href="#" class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#bookingModal">CLASSES</a>
+      </li>
+  </ul>
+</section>
+
+<!-- MODAL FOR CATERING -->
+
+<div class="modal fade" id="cateringModal" tabindex="-1" aria-labelledby="ModalPopup" aria-hidden="true">
   <div class="modal-dialog">
       <div class="modal-content">
           <div class="modal-header">
               <h5 class="modal-title">New Booking</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="close">
-                  <span aria-hidden="true">&times;</span>
-              </button>
           </div>
           <div class="modal-body">
            <p>Please fill out the form below and we'll get back to you as soon as possible.</p>
@@ -368,6 +385,62 @@
   </div>
 </div>
 
+<!-- MODAL FOR CLASSES -->
+
+<div class="modal fade" id="bookingModal" tabindex="-2" aria-labelledby="ModalPopup" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">New Booking</h5>
+          </div>
+          <div class="modal-body">
+           <p>Please fill out the form below and we'll get back to you as soon as possible.</p>
+               <form action="">
+                   <div class="form-group">
+                      <label for="email">Email Address</label>
+                      <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                   </div>
+                   <div class="form-group">
+                    <label for="number">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="(707) 555-0123">
+                 </div>
+                   <div class="form-group">
+                    <label for="type">Private Cooking Class $950</label>
+                    <select class="form-control" id="children">
+                      <option value="1">Curry</option>
+                      <option value="2">Vegan</option>
+                      <option value="3">Meat</option>
+                      <option value="4">Vegetarian</option>
+                      <option value="5">Custom</option>
+                  </select>
+                </div>
+                   <div class="form-group">
+                      <label for="adults">Additonal Guests ($100 per person)</label>
+                      <input type="text" class="form-control" id="people" placeholder="Up to 8 Guests">
+                   </div>
+                   <div class="form-group">
+                    <label for="adults">Wine Pairing ($25 per person)</label>
+                    <input type="text" class="form-control" id="people" placeholder="Optional Wine Pairing - 3 tasting pours">
+                   </div>
+                   <div class="form-group">
+                    <label for="adults">Special Cocktail Class ($45 Per Person)</label>
+                    <input type="text" class="form-control" id="people" placeholder="Optional Cocktail Class - 3 drinks">
+                   </div>
+                   <div class="form-group">
+                       <label for="requests">Additional Requests</label>
+                       <textarea id="requests" rows="3" class="form-control">
+
+                       </textarea>
+                   </div>
+               </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Submit Request</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
 
 <!-- JavaScript Bundle with Popper -->
 
